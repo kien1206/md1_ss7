@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Bar Chart</title>
+    <style>
+        .bar-container {
+            width: 50%;
+            margin: 100px auto;
+        }
+        .bar {
+            width: 0;
+            height: 30px;
+            background-color: orange;
+            margin: 10px 0;
+            position: relative;
+            transition: width 0.5s;
+        }
+        .bar span {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+            color: white;
+        }
+        .bar-30 { width: 30%; }
+        .bar-100 { width: 100%; }
+        .bar-90 { width: 90%; }
+        .bar-10 { width: 10%; }
+        .bar-50 { width: 50%; }
+        .bar-60 { width: 60%; }
+        .bar-40 { width: 40%; }
+        .bar-80 { width: 80%; }
+    </style>
+</head>
+<body>
+
+<div class="bar-container">
+    <div class="bar bar-30"><span>30%</span></div>
+    <div class="bar bar-100"><span>100%</span></div>
+    <div class="bar bar-90"><span>90%</span></div>
+    <div class="bar bar-10"><span>10%</span></div>
+    <div class="bar bar-50"><span>50%</span></div>
+    <div class="bar bar-60"><span>60%</span></div>
+    <div class="bar bar-40"><span>40%</span></div>
+    <div class="bar bar-80"><span>80%</span></div>
+</div>
+
+</body>
+</html>

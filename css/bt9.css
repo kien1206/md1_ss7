@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Times New Roman', Times, serif; 
+    background-color: white; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+    justify-content: center; /* Căn giữa các phần tử trong hàng */
+    padding: 20px; /* Khoảng cách lề ngoài container */
+}
+
+.item {
+    background-color: #ffffff; /* Màu nền của phần tử */
+    border: 1px solid #ddd; /* Đường viền của phần tử */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Hiệu ứng đổ bóng */
+    flex: 1 1 calc(25% - 40px); /* 4 phần tử / hàng */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.item h3 {
+    font-size: 18px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.details li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.details i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.price-and-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.price-and-button span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.price-and-button button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.price-and-button button:hover {
+    background-color: #0056b3;
+}
+.item-01{
+    display: flex;
+}
+.item-01 .item{
+    margin: 20px;
+}
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .item {
+        flex: 1 1 calc(33.333% - 40px); /* 3 phần tử / hàng */
+    }
+}
+
+@media (max-width: 991px) {
+    .item {
+        flex: 1 1 calc(50% - 40px); /* 2 phần tử / hàng */
+    }
+}
+
+@media (max-width: 590px) {
+    .item {
+        flex: 1 1 100%; /* 1 phần tử / hàng */
+    }
+}

@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 2px 3px 2px 0 gray;
+}
+
+header {
+    background-color: #007BFF;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px; 
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 15px; 
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+}
+
+.navbar .user {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .user img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+.navbar a:hover {
+    background-color: rgb(255, 0, 251);
+    color: black;
+}
+.search{
+    position: relative;
+}
+.fa-searchengin{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.fa-chevron-down{
+    color: white;
+}

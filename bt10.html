@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback TA</title>
+    <link rel="stylesheet" href="css/bt10.css">
+    <link rel="stylesheet" href="New folder/fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">Feedback TA <i class="fas fa-comments"></i></h1>
+        </header>
+
+        <main class="main">
+            <section class="feedback-form">
+                <h2 class="feedback-form__title">Gửi phản hồi <i class="fas fa-paper-plane"></i></h2>
+                <form class="feedback-form__form">
+                    <div class="feedback-form__group">
+                        <label for="feedback-teacher">Tên thầy/cô giáo:</label>
+                        <input type="text" id="feedback-teacher" name="feedback-teacher" class="feedback-form__input">
+                    </div>
+
+                    <div class="feedback-form__group">
+                        <label for="feedback-content">Nội dung phản hồi:</label>
+                        <textarea id="feedback-content" name="feedback-content" class="feedback-form__textarea"></textarea>
+                    </div>
+
+                    <button type="submit" class="feedback-form__button">Gửi phản hồi <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </section>
+
+            <section class="reviews">
+                <h2 class="reviews__title">Đánh giá <i class="fas fa-star"></i></h2>
+                <div class="reviews__list">
+                    <div class="review">
+                        <div class="review__header">
+                            <h3 class="review__teacher">Thầy Phú</h3>
+                            <span class="review__rating">10</span>
+                        </div>
+
+                        <p class="review__content">
+                            Quả là tuyệt vời
+                        </p>
+                    </div>
+
+                    <div class="review">
+                        <div class="review__header">
+                            <h3 class="review__teacher">Thầy Phú</h3>
+                            <span class="review__rating">10</span>
+                        </div>
+
+                        <p class="review__content">
+                            Thầy dạy rất hay a !!!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reviews__average">
+                    <span class="reviews__average-label">Đánh giá trung bình:</span>
+                    <span class="reviews__average-rating">10.0</span>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

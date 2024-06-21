@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif 
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .item {
+            width: 250px;
+            height: 100vh;
+            margin-right: 4px; /* Khoảng cách giữa các phần tử */
+            padding: 8px 16px; /* Padding trên-dưới: 8px, trái-phải: 16px */
+            background-color: red; /* Màu sắc tùy chỉnh */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+        .item:last-child {
+            margin-right: 0;
+        }
+        .item.active {
+            background-color: #c0c0c0; /* Màu sắc khác cho phần tử được chọn */
+        }
+        .item i {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+    </style>
+    <!-- Thêm link đến thư viện Font Awesome để sử dụng icon -->
+    <link rel="stylesheet" href="New folder/fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="item active">
+            <i class="fa-solid fa-helicopter-symbol"></i>
+            <span>Home</span>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-helicopter-symbol"></i>
+            <span>User</span>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-helicopter-symbol"></i>
+            <span>Settings</span>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-helicopter-symbol"></i>
+            <span>Info</span>
+        </div>
+    </div>
+</body>
+</html>
